@@ -35,7 +35,8 @@ ready (model) ->
         text: el.value
         created_at: new Date(),
         (err) -> 
-          console.log 'added: error = '+err
+          console.log 'calback called, err = '
+          console.log err
           model.push '_ids', id
 
       el.value = ''
